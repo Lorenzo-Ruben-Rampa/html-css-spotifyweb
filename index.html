@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotifyweb</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <script src="https://kit.fontawesome.com/750cb603a8.js" crossorigin="anonymous"></script>       
+</head>
+<body>
+    <div id="wrapper">
+             
+     <!-- Barra laterale sx -->
+        <nav class="menu">
+            <div class="container-logo">
+                <img src="img/logo.svg" alt="logo" class="logo">
+                <img src="img/logo-small.svg" alt="logo spotify" class="mini-logo">
+            </div>
+            <ul class="active">
+                <li class="active-li">
+                    <div class="button">
+                        <a class="link-sx grey" href="link">
+                            <div class="icon">
+                                <img src="img/home.svg" class="grey" alt="home icon">
+                            </div>
+                        Home</a>
+                    </div>
+                </li>
+            </ul>
+                <ul class="search">
+                    <li class="grey hover-button mobile-icon">
+                        <div class="button search-button"> 
+                            <a class="link-sx" href="link">
+                                <div class="icon">
+                                    <img src="img/search.svg" alt="search icon">
+                                </div>
+                            Cerca</a>
+                        </div>
+                        <div class="button hidden"> 
+                            <a class="link-sx" href="link">
+                                <div class="icon">
+                                    <img src="img/search-white.svg" alt="search icon">
+                                </div>
+                            Cerca</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="library">
+                    <li class="grey">
+                        <div class="button hidden mobile-icon"> 
+                            <div class="icon">
+                                <img src="img/libreria-white.svg" alt="library icon">
+                            </div>
+                            <a class="link-sx" href="link">La tua libreria</a>
+                        </div>
+                        <div class="button library-button mobile-icon"> 
+                            <div class="icon">
+                                <img src="img/libreria.svg" alt="library icon">
+                            </div>
+                            <a class="link-sx" href="link">La tua libreria</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="playlist">
+                    <h2 class="white big">PLAYLIST</h2>
+                    <div class="container-playlist">
+                        <a href="link" class="grey">
+                            <i class="fa-solid fa-square-plus fa-2xl grey hover-plus"></i>
+                        Crea Playlist</a>
+                    </div>
+                </div>
+                <ul class="playlist-name">
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                    <li class="grey">
+                        <a href="link">Nome Playlist</a>
+                    </li>
+                </ul>
+                <ul class="install-app">
+                    <li class="grey">
+                        <div class="button download-button">
+                            <div class="icon mobile mini-mobile-icon">
+                                <img src="img/download.svg" alt="add icon">
+                            </div>
+                            <a class="link-sx" href="link">Installa app</a>
+                        </div>
+                        <div class="button hidden">
+                            <div class="icon mobile mini-mobile-icon">
+                                <img src="img/download-white.svg" alt="add icon">
+                            </div>
+                            <a class="link-sx" href="link">Installa app</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container-user">
+                    <a href="link" class="user-link">
+                        <div class="icon user">
+                            <img src="img/profile.svg" class="user-img" alt="user icon">
+                        </div>
+                        <h2 class="white username">John Doe</h2>
+                    </a>
+                </div>
+
+        </nav>
+
+        <main>
+
+        <!-- Barra in alto -->
+        <div class="upgrade">
+            <a href="link" class="upgrade-button">EFFETTUA L'UPGRADE</a>
+        </div>   
+            
+            
+        <!-- Sezione centrale -->
+            <div class="container">
+                <div class="container-button-centrali">
+                    <div class="button-centrali special">
+                        <a href="link" class="special-link">IN EVIDENZA</a>
+                        <div class="active-middle"></div>
+                    </div>
+                    <div class="button-centrali">
+                        <a href="link" class="link">PODCAST</a>
+                    </div>
+                    <div class="button-centrali">
+                        <a href="link" class="link">CLASSIFICHE</a>
+                    </div>
+                    <div class="button-centrali"><a href="link" class="link">
+                        GENERI E MOOD</a>
+                    </div>
+                    <div class="button-centrali">
+                        <a href="link" class="link">NUOVE USCITE</a>
+                    </div>
+                    <div class="button-centrali">
+                        <a href="link" class="link">SCOPRI</a>
+                    </div>   
+                </div>      
+            </div>
+            <h1 class="white">Recently played</h1>
+            <div class="container-recently-played">
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/metal_lifting.jpg" alt="heavy metal playlist album cover">
+                        </div>
+                        <h2 class="white big">Heavy Metal</h2>
+                        <p class="grey subtitle">Subtitle</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/stranger.jpeg" alt="stranger things album cover">
+                        </div>
+                        <h2 class="white big">Strangers Things, Vol.1{a Netflix Original Series Soundtrack}</h2>
+                        <p class="grey subtitle">Kyle Dixon & Michael Stein</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/aquietplace.jpeg" alt="a quiet place album cover">
+                        </div>
+                        <h2 class="white big">A quiet place</h2>
+                        <p class="grey subtitle">Subtitle</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/split.jpeg" alt="split album cover">
+                        </div>
+                        <h2 class="white big">Split</h2>
+                        <p class="grey subtitle">Subtitle</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/cure.jpeg" alt="a cure for wellness album cover">
+                        </div>
+                        <h2 class="white big">A cure for wellness</h2>
+                        <p class="grey subtitle">Subtitle</p>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="etichetta">
+                        <div class="container-album">
+                            <div class="grey-mask"></div>
+                            <div class="play-hover">
+                                <img src="img/play-button.png" alt="play icon">
+                            </div>
+                            <img src="img/sinister.jpeg" alt="sinister album cover">
+                        </div>
+                        <h2 class="white big">Sinister</h2>
+                        <p class="grey subtitle">Subtitle</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="white">Creato per Jonhn Doe</h1> 
+            <div class="label-text">
+                <p class="grey subtitle">Più ascolti più saranno accurati i suggerimenti</p> 
+            </div>
+            <div class="container-artisti">
+                <div class="radar">
+                    <div class="artisti-img-container">
+                        <img src="img/radar.jpeg" alt="cover release radar">
+                    </div>
+                    <h2 class="white big">Release Radar</h2>
+                </div>
+                <div class="radar">
+                    <div class="artisti-img-container">
+                    <img src="img/mixdaily.jpeg" alt="cover daily mix">
+                    </div>
+                    <h2 class="white big">Daily Mix 1</h2>
+                </div>
+            </div>   
+            <h1 class="white">Artisti più popolari</h1> 
+            <div class="label-text">
+                <p class="grey">Più ascolti più saranno accurati i suggerimenti</p> 
+            </div> 
+            <div class="container-artisti-popolari">
+                <div class="radar-round">
+                    <div class="round-image-container">
+                        <img src="img/youg.jpeg" alt="cover lana del rey young" class="round">
+                    </div>
+                    <h2 class="white big">Lana del Rey</h2>
+                </div>
+                <div class="radar-round">
+                    <div class="round-image-container">
+                        <img src="img/einaudi.jpeg" alt="cover einaudi" class="round">
+                    </div>
+                    <h2 class="white big">Ludovico Einaudi</h2>
+                </div>
+            </div>       
+        </main>
+   
+    </div>
+    <!-- Piè di pagina -->
+        <footer id="player">
+            <div class="lato sx">
+                <img src="img/sinister.jpeg" alt="sinister cover album" class="mini">
+                <div class="container-mini-etichetta">
+                    <h2 class="mini-etichetta white">Sinister</h2>
+                    <p class="grey mini-etichetta underline">Brano Nome</p>
+                </div>
+                <div class="container-footer-icon-sx">
+                    <i class="fa-regular fa-heart grey"></i>
+                    <i class="fa-regular fa-folder grey"></i>
+                </div>
+            </div>
+            <div class="f-centro">
+                <div class="player-command">
+                    <i class="fa-solid fa-shuffle white small-icon"></i>
+                    <i class="fa-solid fa-backward-step white small-icon"></i>
+                    <i class="fa-regular fa-circle-play fa-2xl white play small-icon"></i>
+                    <i class="fa-solid fa-forward-step white small-icon"></i>
+                    <i class="fa-solid fa-rotate-right white small-icon"></i>
+                </div>
+                <div class="song-bar">
+                    <p class="white mini-etichetta">0:25</p>
+                    <div class="bordo-footer-chiaro mobile-mid-sx"></div>
+                    <div class="bordo-footer-scuro"></div>
+                    <p class="white mini-etichetta">4:35</p>
+                </div>
+            </div>
+            <div class="lato dx">
+                <div class="container-footer-icon-dx">
+                    <i class="fa-solid fa-list white"></i>
+                </div>
+                <div class="container-footer-icon-dx">
+                    <i class="fa-solid fa-desktop white"></i>
+                </div>
+                <div class="container-footer-icon-dx">
+                    <i class="fa-solid fa-volume-high white"></i>
+                </div>
+                <div class="bordo-footer-chiaro"></div>
+                <div class="bordo-footer-scuro"></div>
+            </div>
+        </footer>
+  
+    
+</body>
+</html>

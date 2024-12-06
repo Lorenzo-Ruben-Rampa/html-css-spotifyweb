@@ -1,0 +1,843 @@
+/* Regole generali */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ #wrapper {
+    height: calc(100vh - 150px);
+    display: flex;
+    background-color: rgb(15, 15, 36);
+    }
+
+#wrapper nav {
+    height: 100%;
+    width: 250px;
+    background-color: black;
+    overflow: hidden;
+}
+
+#wrapper main {
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 250px);
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+    
+.grey {
+    color: grey;
+    font-family: sans-serif;
+  }
+
+.white {
+    color: white;
+    font-family: "Montserrat";
+}   
+
+ul {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+.big {
+    font-size: 20px;
+}
+
+.special {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.special-link {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.link {
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Comandi hover */
+
+a:hover {
+    cursor:pointer;
+    color: white;  
+}
+
+.upgrade-button:hover {
+    width: 350px;
+    height: 72px;
+    font-size: 1.5em;
+}
+
+/* comando per farlo apparire sempre (in alternativa a javascript) */
+.active {
+    border-left: 3px solid rgb(111, 243, 111);
+    padding-left: 10px;
+}
+
+/* comando per farlo apparire sempre (in alternativa a javascript)
+    .active-middle { 
+    display: none;
+}
+*/
+
+/* comando hover */
+.active:visited {
+    border-left: 3px solid rgb(111, 243, 111);
+}
+
+.active-middle:visited {
+    display:block;
+}
+
+.active-middle {
+    background-color: rgb(111, 243, 111);
+    width: 30%;
+    height: 2px;
+    margin-top: 4px;
+}
+
+.search:hover .hidden {
+    display: block;
+}
+
+.search:hover .search-button {
+    display: none;
+}
+
+.library:hover .library-button {
+    display: none;
+}
+
+.library:hover .hidden {
+    display: block;
+}
+
+.install-app:hover .download-button {
+    display: none;
+}
+
+.install-app:hover .hidden {
+    display: block;
+}
+
+.container-playlist:hover .hover-plus {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.underline:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;    
+}
+
+.fa-heart:hover {
+    color:white;
+    cursor: pointer;
+}
+
+.fa-folder:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.bordo-footer-chiaro:hover {
+    background-color: rgb(111, 243, 111);
+    cursor: pointer;
+}
+
+.fa-circle-play:hover {
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.container-album:hover .play-hover {
+    display: block;
+    cursor: pointer;
+}
+
+.container-album:hover .grey-mask {
+    display: block;
+    cursor: pointer;
+}
+
+.container-album:hover {
+    cursor: pointer;
+}
+
+.play-hover {
+    display:none;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    z-index: 98;
+}
+
+.grey-mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    z-index: 90;
+    display: none;
+}
+
+/* Barra laterale sx */
+
+.mini-logo {
+    display: none;
+    min-width: 30px;
+}
+
+.playlist-name {
+    margin-left: 10px;
+}
+
+.search {
+   padding-left: 12px;
+}
+
+.playlist {
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.container-playlist {
+    width: 200px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.container-logo {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.link-sx {
+    margin-left: 5px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.container-user {
+    border-top: 1px solid grey;
+    width: 90%;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.user-link {
+    display:flex;
+    align-items: center;
+}
+
+.icon {
+    max-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.install-app {
+    margin-bottom: 5px;
+    margin-top: 150px;
+}
+
+.container-user {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    background-color: grey;
+    min-width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin-right: 9px;
+}
+
+.button { 
+    width: 300px;
+    border: none;
+    cursor: pointer;
+    color: grey;
+}
+
+.playlist {
+    margin-left: 8px;
+}
+
+/* Barra in alto */
+
+.upgrade {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: rgba(23, 23, 26, 0.288);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99;
+}
+
+img {
+    width:100%;
+}
+
+.upgrade-button {
+    width: 240px;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "Montserrat";
+}
+
+/* Sezioni centrali */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-button-centrali {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.button-centrali {
+    width: calc(100% / 6 - 40);
+    margin: 20px;
+    color: grey;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.container-recently-played {
+    display:flex;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.song {
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.etichetta {
+    text-align: center;
+}
+
+.label-text {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.radar {
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    text-align: center;
+}
+
+.container-album {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.subtitle {
+    margin-top: 10px;
+}
+
+.container-artisti {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+
+.artisti-img-container {
+    margin-bottom: 20px;
+}
+
+.container-artisti-popolari {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.radar-round {
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    text-align: center; 
+}
+
+.round-image-container {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/* Piè di pagina */
+
+footer {
+    height: 90px;
+    background-color:rgb(41, 41, 41);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lato {
+    width: 15%;
+    display: flex;
+}
+
+.sx {
+ padding-top: 20px;
+ padding-left: 10px;
+}
+
+.dx {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-centro {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-mini-etichetta {
+  margin-top: 7px;
+  margin-right: 30px;
+}
+
+.mini-etichetta {
+    font-size: 11px;
+}
+
+.mini {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 8px;
+}
+
+.container-footer-icon-sx {
+    display: flex;
+    justify-content: space-between;
+    width: 45px;
+    margin-top: 9px;
+}
+
+.player-command {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.song-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+   padding-top: 8px;
+}
+
+.bordo-footer-chiaro {
+    width: 10%;
+    height: 4px;
+    background-color: white;
+    margin-left: 30px;
+    border-radius: 100px;
+}
+
+.bordo-footer-scuro {
+    width: 60%;
+    height: 4px;
+    background-color: rgb(95, 94, 94);
+    margin-right: 30px;
+    border-radius: 100px;
+}
+
+.container-footer-icon-dx{
+margin-right: 30px;
+}
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+ /* Mobile */
+
+ @media screen and (max-width:767px) {
+
+/* Menù a sx */
+
+#wrapper nav {
+    width: 50px;
+}
+
+#wrapper main {
+    width: calc(100% - 50px);
+}
+
+.menu > div {
+    width: 70px;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu > ul {
+    width: 50px;
+    padding-left: 0;
+
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: none;
+}
+
+.user {
+    margin-right: 0;
+}
+
+.playlist-name {
+    display: none;
+}
+
+.username {
+    display: none;
+}
+
+.playlist {
+    visibility: collapse;
+}
+
+.mini-logo {
+    display: block;
+    max-width: 30px;
+}
+
+.link-sx {
+    font-size: 0;
+}
+
+.container-logo {
+    margin-top: 5px;
+}
+
+.active-li {
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+.mobile-icon {
+    padding-left: 8px;
+    margin-top: 5px;
+}
+
+.mini-mobile-icon {
+     margin-left: 12px;
+}
+
+ul {
+    margin-bottom: 5px;
+}
+
+li {
+    padding-top: 5px;
+}
+
+/* Hover */
+
+.container-logo:hover {
+    cursor: pointer;
+}
+
+/* Sezione centrale */
+
+.container-button-centrali {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-logo {
+    margin-bottom: 10px;
+}
+
+.button-centrali {
+    width: calc(100% / 4 - 40px);
+    margin: 20px;
+}
+
+.special-link {
+    width: 100%;
+}
+
+.active-middle {
+width: 25%;
+}
+
+.container-recently-played {
+    flex-wrap: wrap;
+}
+
+.song {
+    width: calc(100% / 2 - 20px);
+    margin: 10px;
+}
+
+/* Piè di pagina */
+
+.container-footer-icon-sx {
+    flex-wrap: wrap;
+    width: 20px;
+    align-items: center;
+    height: 40px;
+    margin-top: 1px;
+}
+
+.active {
+    height:40px;
+}
+
+.container-user {
+    border: none;
+    padding-top: 0;
+}
+
+.mobile {
+    max-width: 20px;
+    max-height: 20px;
+    padding-left: 5px;
+}
+
+.lato { 
+    width: 30%;
+}
+
+.f-centro {
+    width: 33%;
+}
+
+.player-command {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bordo-footer-scuro {
+    width: 85%;
+    margin-right: 10px;
+}
+    
+.bordo-footer-chiaro {
+    width: 15%;
+    margin-left: 0;
+ }
+
+ .mobile-mid-sx {
+    margin-left: 8px;
+ }
+
+ .link-sx {
+    margin-left: 0;
+ }
+
+}
+  /* Tablet */
+
+  @media screen and (min-width:768px) and (max-width:991px) {
+
+    /* Sezione centrale */
+
+    .container-button-centrali {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .button-centrali {
+        width: calc(100% / 3 - 40px);
+        margin: 20px;
+    }
+
+    .special-link {
+        width: 100%;
+    }
+
+    .active-middle {
+    width: 15%;
+    }
+
+    .container-recently-played {
+        flex-wrap: wrap;
+    }
+
+    .song {
+        width: calc(100% / 2 - 20px);
+        margin: 10px;
+    }
+
+    /* Piè di pagina */
+
+    .container-footer-icon-sx {
+        flex-wrap: wrap;
+        width: 20px;
+        align-items: center;
+        height: 40px;
+        margin-top: 1px;
+    }
+
+    .container-footer-icon-dx {
+        margin-right: 15px;
+    }
+
+    .container-footer-icon-dx {
+        margin-right: 5px;
+    }
+
+    .lato { 
+        width: 30%;
+    }
+
+    .f-centro {
+        width: 32%;
+    }
+
+    .bordo-footer-chiaro {
+        margin-left: 5px;
+    }
+
+    .bordo-footer-scuro {
+        margin-right: 5px;
+    }
+
+    .small-icon {
+        margin: 10px;
+}
+
+    .player-command {
+        width: 100%;
+    }
+  }
+
+  /* Laptop */
+
+  @media screen and (min-width:992px) and (max-width:1199px) {
+
+    /* Sezione centrale */
+
+    .play-hover {
+        position: absolute;
+        left:33%;
+        top: 33%;
+    }
+
+    .container-button-centrali {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .button-centrali {
+        width: calc(100% / 5 - 40px);
+        margin: 20px;
+    }
+
+    .special-link {
+        width: 100%;
+    }
+
+    .container-recently-played {
+        flex-wrap: wrap;
+    }
+
+    .song {
+        width: calc(100% / 4 - 20px);
+        margin: 10px;
+    }
+
+    .etichetta {
+        width: 90%;
+    }
+
+    /* Piè di pagina */
+
+    .container-footer-icon-dx {
+        margin-right: 15px;
+    }
+
+    .lato { 
+        width: 25%;
+    }
+
+    .f-centro {
+        width: 45%;
+    }
+}
